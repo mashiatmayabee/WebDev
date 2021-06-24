@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Before And After</title>
+  <style>
+    .is-required::after {
+      content: '*';
+      color: red;
+      padding-left: 2px;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: black;
+      color: blanchedalmond;
+      }
+      header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+
+      }
+      header::before {
+        content: '';
+        background: url('https://source.unsplash.com/random') no-repeat center center/cover;
+        opacity: 0.4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+
+      }
+      header > h1 {
+        font-size: 4rem;
+        margin: 1rem;
+      }
+
+  </style>
+
+
+</head>
+<body>
+  <!-- <label class="is-required" for="name">Name</label>
+  <input type="text" name="name" id="name"> -->
+  <header>
+    <h1>Lorem, ipsum dolor.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex repellat voluptatibus rem, ipsam delectus consectetur.</p>
+
+    
+  </header>
+  <h3>Lorem, ipsum dolor.</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed incidunt minus quisquam aut voluptatem, nemo esse adipisci quasi reiciendis odit blanditiis assumenda optio iusto reprehenderit quo vero quia totam expedita?</p>
+
+</body>
+
+</html>
