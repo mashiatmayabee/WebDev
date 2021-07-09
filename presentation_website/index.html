@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9f1665fda3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Presentation</title>
+</head>
+
+<body>
+  <!-- page-1 => introduction -->
+  <section id="page-1" class="page">
+    <h1>Welcome To My Presentation</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusamus facere aspernatur libero quis
+      placeat maxime optio ratione sit est a sunt vitae quo laboriosam ab repellat quaerat eius pariatur nam maiores,
+      error odit saepe quam? Laborum eos nobis ducimus!</p>
+    <div>
+      <a href="#page-2" class="btn">
+        Next Page
+        <i class="fas fa-arrow-circle-down"></i> </a>
+    </div>
+  </section>
+
+
+  <!-- page-2  -->
+  <section id="page-2" class="page">
+    <h1>This Is My Page-2</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusamus facere aspernatur libero quis
+      placeat maxime optio ratione sit est a sunt vitae quo laboriosam ab repellat quaerat eius pariatur nam maiores,
+      error odit saepe quam? Laborum eos nobis ducimus!</p>
+    <div>
+      <a href="#page-1" class="btn btn-dark">
+        Previous Page
+        <i class="fas fa-arrow-circle-up"></i>
+      </a>
+      <a href="#page-3" class="btn">
+        Next Page
+        <i class="fas fa-arrow-circle-down"></i>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- page-3  -->
+  <section id="page-3" class="page">
+    <h1>This Is My Page-3</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusamus facere aspernatur libero quis
+      placeat maxime optio ratione sit est a sunt vitae quo laboriosam ab repellat quaerat eius pariatur nam maiores,
+      error odit saepe quam? Laborum eos nobis ducimus!</p>
+    <div>
+      <a href="#page-2" class="btn btn-dark">
+        Previous Page
+        <i class="fas fa-arrow-circle-up"></i>
+      </a>
+      <a href="#page-4" class="btn">
+        Next Page
+        <i class="fas fa-arrow-circle-down"></i>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- page-4  -->
+  <section id="page-4" class="page">
+    <h1>This Is My Page-3</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam accusamus facere aspernatur libero quis
+      placeat maxime optio ratione sit est a sunt vitae quo laboriosam ab repellat quaerat eius pariatur nam maiores,
+      error odit saepe quam? Laborum eos nobis ducimus!</p>
+    <div>
+      <a href="#page-3" class="btn btn-dark">
+        Previous Page
+        <i class="fas fa-arrow-circle-up"></i>
+      </a>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 400, function(){
+  
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+
+
+  <!-- <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script>
+    // Smooth Scrolling
+    $('.btn').on('click', function(event) {
+        if (this.hash !== '') {
+          event.preventDefault();
+          const hash = this.hash;
+          $('html, body').animate(
+            {
+              scrollTop: $(hash).offset().top
+            },
+            800
+          );
+        }
+      });
+  </script> -->
+</body>
+
+</html>
