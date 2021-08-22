@@ -1,0 +1,19 @@
+
+
+<%- include('pertials/header'); -%>
+<h1>Compose</h1>
+<form action="/compose" method="post">
+  <div class="mb-3">
+      <label for="composeTitle" class="form-label">Title</label>
+      <input type="text" class="form-control" name="postTitle" id="postTitle">
+  </div>
+  <div class="mb-3">
+      <label for="composeText" class="form-label">Post</label>
+      <textarea class="form-control" id="postText" name= "postBody" style="height: 100px"></textarea>
+  </div>
+<div class="d-grid gap-3">
+  <button type="submit" class="btn btn-primary" name="button">Submit</button>
+</div>
+</form>
+
+<%- include('pertials/footer'); -%>

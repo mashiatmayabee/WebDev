@@ -1,0 +1,17 @@
+<%- include('pertials/header'); -%>
+<h1>Home page</h1>
+<p>
+  <%= startingContent %>
+</p>
+<% posts.forEach(function(post){%>
+  <h2><%= post.title %></h2>
+
+  <p>
+    <%= post.body.slice(0, 100).concat('...'); %>
+    <a href="/posts/<%= post.title %>">Read more</a>
+    
+
+  </p>
+ <% }); %>
+<%- include('pertials/footer'); -%>
+
