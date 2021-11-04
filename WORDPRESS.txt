@@ -1,0 +1,3 @@
+db_name- wordpress_demo
+username- maya
+pass- 4iDdbJglpW5cH8iA

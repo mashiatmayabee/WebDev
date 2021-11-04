@@ -78,13 +78,17 @@ p {
   color: #fff;
   overflow: auto;
 }
+
+#navbar a {
+  color: #fff;
+}
 #navbar .logo{
   float: left;
   padding: 10px;
   color: #f7c08a;
 }
-#navbar a {
-  color: #fff;
+#navbar .logo:hover{
+  color: #f7c08a;
 }
 #navbar ul{
   list-style: none;

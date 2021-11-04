@@ -22,4 +22,5 @@ body {
 #main-header {
   background: var(--secondary-color);
   padding: 4rem o;
+  /* color:#fff; */
 }
